@@ -31,7 +31,7 @@ input_data=pd.DataFrame([[Delivery_Distance,Traffic_Congestion,Weather_Condition
        Road_Condition_Score,Package_Weight,Fuel_Efficiency,
        Warehouse_Processing_Time]],columns=columns)
 
- if st.button("predict delivery delay"):
+if st.button("predict delivery delay"):
    prediction=predict_delivery_delay(input_data)
    if prediction[0]==0:
      st.write("0 no significant delay expected")
